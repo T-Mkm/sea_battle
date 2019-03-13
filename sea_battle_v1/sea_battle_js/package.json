@@ -3,14 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-scripts": "2.1.3",
+    "react-scripts": "^2.1.8",
     "requirements": "0.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -22,5 +20,17 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/preset-env": "^7.3.4",
+    "babel-core": "^7.0.0-beta.40",
+    "babel-loader": "^8.0.5",
+    "babel-preset-es2015": "^7.0.0-beta.40",
+    "babel-preset-react": "^7.0.0-beta.40",
+    "css-loader": "^2.1.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
 }
