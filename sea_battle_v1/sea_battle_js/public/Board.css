@@ -12,12 +12,17 @@ body,
   height: 100%;
 }
 
+#board{
+  padding: 60px;
+}
+
 .hero {
-  width: 100%;
+  width: -webkit-fill-available;
   min-height: 600px;
   background-image: url('background1.jpeg');
+  text-align: center;
 }
-h1 {
+h1#mainCenterTitle {
   font-size: 5em;
   text-align: center;
   font-weight: 700;
@@ -39,4 +44,81 @@ h1 {
   display: none;
   z-index: 1;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.defaultH{
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+.defaultH1{
+  font-size: 5em;
+}
+.defaultH2{
+  font-size: 4em;
+}
+.defaultH3{
+  font-size: 3em;
+}
+.defaultH4{
+  font-size: 2em;
+}
+.defaultH5{
+  font-size: 1.5em;
+}
+.defaultH6{
+  font-size: 1em;
+}
+
+#homeWelcomeButtonsContainer{
+  text-align: center;
+  width: 80%;
+  margin: 20px auto 0px auto;
+  display: flex;
+}
+
+.top25vh {
+  margin-top: 25vh;
+}
+
+.transition{
+  transition: 1s;
+}
+
+.noHeight{
+  height: 0;
+}
+
+.opacity0{
+  opacity: 0 !important;
+}
+
+#homeWelcomeButtonsContainer button{
+  transition:0.2s;
+  border-radius: 25px;
+  border: 5px solid dodgerblue;
+  background: #61dafb;
+  width: 300px;
+  height: 100px;
+  color: #007af1;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2em;
+  margin: 0px auto;
+  display: inline-block;
+  cursor: pointer;
+}
+#homeWelcomeButtonsContainer button:hover{
+  border-radius: 25px;
+  border: 5px solid #007af1;
+  background: #83e1fb;
+  width: 320px;
+  height: 120px;
+  color: #0466c5;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2.2em;
+  margin: 0px auto;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: -10px;
 }
